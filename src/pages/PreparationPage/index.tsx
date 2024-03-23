@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import styles from "./index.module.css";
 import { useNavigate } from "react-router-dom";
 import { MainButton } from "../../components/MainButton";
