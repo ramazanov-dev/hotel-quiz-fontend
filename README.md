@@ -1,25 +1,34 @@
-# React TS Scaffold
-Scaffold for React Typescript project based on Vite
+# Hotel quiz frontend
+Frontend for my own quiz app
 
-## Technical Requirements
-* BASH environment. Any linux based OS, WSL or Git Bash
-* Yarn version 3 or greater;
+## Requirements
+
 * Node.JS version 18 or greater;
+* Yarn version 3 or greater;
+* BASH environment. Any linux based OS or WSL or Git Bash
 
-## Features
-1. Maximum flexible reset of standard styles
-3. Clean project structure without annoying markup
-4. Basic routing out of the box
+### If you use Microsoft VS Code
 
-## Note
-If you're using Yarn and want to enable type checking in Visual Studio Code, run the following command:
+Run in terminal after all modules installed:
 
 ```shell
 yarn dlx @yarnpkg/sdks vscode
 ```
 
-## Process management:
-`yarn build` - __build__ \
-`yarn dev` -  __Run in development mode__\
-`yarn start` - __Run in production mode__ (Make sure that you have already built the project)\
-`yarn lint` - __Lint__
+## Features
+
+* _tsconfig.json_ optimized for building React apps;
+* ESLint included;
+* Husky included. It allows passing checks before git commiting. Checks are scripted in _scripts/checks.sh_ folder;
+* ESBuild is used instead of create-react-app for faster building
+
+## How to's:
+
+__Build__: `yarn build`. After this, _index.js_ and _index.css_ files will be in _public_ directory\
+__Run in development mode__: `yarn dev`\
+__Lint__: `yarn lint`
+
+### How to prepare to development
+
+1. Copy _src/config.example.js_ file to _src/config.js_ and fill it as you want.
+2. Run `yarn prepare`
