@@ -5,11 +5,12 @@ import {IconsCollection} from "./components/Icon";
 import "./styles/null.css"
 import "./styles/variables.css"
 import "./styles/globalStyles.css"
+import App from './components/App';
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <IconsCollection/>
-    <AppRouter />
+    <App/>
   </BrowserRouter>
 )
